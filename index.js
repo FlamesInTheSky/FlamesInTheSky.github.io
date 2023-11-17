@@ -1,4 +1,4 @@
-function random_rgba() {
+function randomRGBA() {
   var o = Math.round, rand = Math.random, s = 255;
   
   var rgbaList = [], r, g, b, a;
@@ -40,7 +40,7 @@ function generateStars() {
     // var size = Math.floor(Math.random() * 3) + 1;
     x = randomCoordX();
     y = randomCoordY();
-    s = new Star(new Point(x, y), new Point(x + size, y + size), random_rgba());
+    s = new Star(new Point(x, y), new Point(x + size, y + size), randomRGBA());
     stars.push(s);
   }
   return stars;
